@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Calendar </title>
+		<style>	
+			
+			body {
+				margin: 50px;
+				padding: 0;
+			}
+
+			
+			.cal {
+				width: 50%;
+				margin: auto;
+				font-family: Arial, sans-serif;
+				border-radius: 8px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+
+			
+			table {
+				width: 100%;
+				border-collapse: collapse;
+			}
+
+			.heading {
+				color: #fff;
+				background-color: #52D452;
+				text-align: center;
+				padding : 5px;
+			   
+			}
+			
+			td,
+			th {
+				border: solid 1px #ddd;
+				padding: 20px;
+				text-align: center;
+			}
+
+			td:hover {
+				background-color: #FF6961;
+				
+			}
+			.cal-btn
+			{
+				display :flex;
+				justify-content:space-between;
+				padding : 10px;
+			}
+			.cal-btn button 
+			{
+			
+				background-color : #52D452;
+				color : white;
+				padding : 10px;
+				border : none;
+				border-radius : 5px;
+			}
+			button:hover 
+			{
+				background-color : #FF6961;
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="cal">
+			<div class="heading">
+				<h1 id="month_name">Month name</h1>
+				<h1 id="year_name">Year name </h1>
+			</div>
+			<div>
+				<table id="monthly_calendar">
+					<thead>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class = "cal-btn">
+					<button type = "button" id="prev">Previous</button>
+					<button type = "button" id="next">Next</button>
+				</div>
+			</div>
+		</div>
+		<script src="cal1.js"></script>
+	</body>
+</html>
